@@ -1,0 +1,21 @@
+{
+  "version": "1.0.0",
+  "name": "l20n-example",
+  "base": "/",
+  "index": "./example/native/index.html",
+  "main": "./lib/l20n-native.js",
+  "output": {
+    "file": "none",
+    "version": "",
+    "path": "dist/native",
+    "app": "l20n",
+    "library": "l20n",
+    "libraryTarget": "umd"
+  },
+  "jsx": true,
+  "noUglify": true,
+  "devtool": "",
+  "partition": {
+    "NODE_ENV": "production"
+  }
+}

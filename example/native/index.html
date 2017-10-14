@@ -1,0 +1,30 @@
+<!DOCTYPE>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>L20n Demo</title>
+  <style>
+    div {
+      margin: 20px 0;
+    }
+    div[data-l20n="overlayed"] > strong::after {
+      content: attr(title);
+    }
+  </style>
+ </head>
+ <body>
+    <p data-l20n="title">国际化L20n，不依赖于angular</p>
+    <input type="number" oninput="window.changeNum(this)" />
+
+    <div>
+        <a href="#" onclick="window.changeLocale('zh-CN')" data-l20n="data.chinese">中文版本</a>
+        <a href="#" onclick="window.changeLocale('en-US')" data-l20n="data.english">英文版本</a>
+    </div>
+
+    <div data-l20n="overlayed">
+        <strong title=" (Attribute: {{ var }}) "></strong>
+        <input type="number" placehoder="测试一下变量替换" oninput="window.changeVar(this)">
+    </div>
+ </body>
+</html>

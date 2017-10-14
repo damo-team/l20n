@@ -1,0 +1,19 @@
+<!DOCTYPE>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>L20n Demo</title>
+  <style>
+    div {
+      margin: 20px 0;
+    }
+    div[data-l20n="overlayed"] > strong::after {
+      content: attr(title);
+    }
+  </style>
+ </head>
+ <body>
+    <div id="J_page"></div>
+ </body>
+</html>

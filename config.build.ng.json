@@ -1,0 +1,22 @@
+{
+  "version": "1.0.0",
+  "name": "l20n-example",
+  "base": "/",
+  "index": "./example/angular/index.html",
+  "main": "./lib/l20n-ng.js",
+  "output": {
+    "file": "none",
+    "version": "",
+    "path": "dist/ng",
+    "app": "l20n",
+    "library": "l20n",
+    "libraryTarget": "umd"
+  },
+  "jsx": true,
+  "noUglify": true,
+  "devtool": "",
+  "partition": {
+    "NODE_ENV": "production"
+  },
+  "externals": ["angular"]
+}

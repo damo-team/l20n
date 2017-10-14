@@ -1,0 +1,33 @@
+<!DOCTYPE>
+<html ng-app="l20n-test">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>L20n Demo</title>
+  <style>
+    div {
+      margin: 20px 0;
+    }
+    div[data-l20n="overlayed"] > strong::after {
+      content: attr(title);
+    }
+  </style>
+ <meta name="availableLanguages" content="en-US:1.0.0,zh-CN:1.0.0">
+ <meta name="defaultLanguage" content="zh-CN">
+ <meta name="appVersion" content="1.0.0">
+ </head>
+ <body>
+    <p data-l20n="title" data-l20n-options="{{numArgs}}">国际化L20n，不依赖于angular</p>
+    <input type="number" ng-model="num" />
+
+    <div>
+        <a href="#" ng-click="changeLocale('zh-CN')" data-l20n="data.chinese">中文版本</a>
+        <a href="#" ng-click="changeLocale('en-US')" data-l20n="data.english">英文版本</a>
+    </div>
+
+    <div data-l20n="overlayed" data-l20n-options="{{varArgs}}">
+        <strong title=" (Attribute: {{ var }}) "></strong>
+        <input type="number" placeholder="测试一下变量替换" ng-model="_var">
+    </div>
+ <script src="dist/ng/1.0.0/l20n.js"></script></body>
+</html>
