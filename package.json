@@ -1,6 +1,6 @@
 
 {
-  "name": "@damo/l20n",
+  "name": "damo-l20n",
   "version": "0.0.1",
   "main": "dist/rc/l20n",
   "author": "baqian <st403471258@gmail.com>",
@@ -9,7 +9,7 @@
     "damo",
     "l20n"
   ],
-  "homepage": "https://github.com/baqian/damo-team/l20n",
+  "homepage": "https://github.com/damo-team/l20n",
   "dependencies": {
     "l20n": "3.4.1",
     "angular": "^1.3.14",
@@ -19,12 +19,9 @@
     "react": "^15.0.0",
     "react-dom": "^15.0.0"
   },
-  "devDependencies": {
-    
-  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/baqian/damo-team/l20n.git"
+    "url": "https://github.com/damo-team/l20n.git"
   },
   "readmeFilename": "README.md",
   "maintainers": [
@@ -34,7 +31,7 @@
     }
   ],
   "bugs": {
-    "url": "https://github.com/baqian/damo-team/l20n/issues"
+    "url": "https://github.com/damo-team/l20n/issues"
   },
   "license": "MIT"
 }
