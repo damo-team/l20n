@@ -1,6 +1,6 @@
 {
   "name": "damo-l20n",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "dist/rc/l20n.js",
   "author": "baqian <st403471258@gmail.com>",
   "description": "Damo L20n是基于L20n的国际化框架，支持原生、Angular和React框架的实现",
